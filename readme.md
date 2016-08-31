@@ -20,7 +20,13 @@ Each `ViewHolder` responds to *Done* and *Delete* actions to manipulate the task
 
 - You will need to provide your own `google-services.json` file. Which you get from your *Firebase Console*.
 - You will need an actual device for *Firebase Remote Config* to work. It does not work in the Emulator.
-- Update your database permissions to allow `read` and `write` without *auth*.
+- Update your database rules to allow `read` and `write` without *auth*.
+
+### Helpful Links
+
+- [Setup](https://firebase.google.com/docs/android/setup)
+- [Get Started](https://firebase.google.com/docs/database/android/start/)
+- [API Reference](https://firebase.google.com/docs/reference/android/com/google/firebase/database/package-summary)
 
 ### License
 
