@@ -2,6 +2,7 @@ package com.example.cbess.firebasecrud;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.BuildConfig;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.TaskA
         final FirebaseRemoteConfig config = FirebaseRemoteConfig.getInstance();
         // update the config to ping multiple times, don't use liberally
         FirebaseRemoteConfigSettings settings = new FirebaseRemoteConfigSettings.Builder()
-                .setDeveloperModeEnabled(true)
+                .setDeveloperModeEnabled(BuildConfig.DEBUG)
                 .build();
 
         config.setConfigSettings(settings);
@@ -84,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.TaskA
 
         // synced data and writes will be persisted to disk across app 
         // restarts and our app should work seamlessly in offline situations
-        database.setPersistenceEnabled(true);
+        //database.setPersistenceEnabled(true);
 
         // create a leaf on root
         tasksRef = database.getReference("tasks");
