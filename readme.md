@@ -19,7 +19,8 @@ Each `ViewHolder` responds to *Done* and *Delete* actions to manipulate the task
 ### Dev Notes
 
 - You will need to provide your own `google-services.json` file. Which you get from your *Firebase Console*.
-- Yoou will need an actual device for *Firebase Remote Config* to work. It does not work in the Emulator.
+- You will need an actual device for *Firebase Remote Config* to work. It does not work in the Emulator.
+- Update your database permissions to allow `read` and `write` without *auth*.
 
 ### License
 
