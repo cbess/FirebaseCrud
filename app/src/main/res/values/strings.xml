@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FirebaseCrud</string>
+    <string name="action_settings">Settings</string>
+    <!-- The default firebase key name for new tasks -->
+    <string name="config_task_name">new_task_name</string>
+</resources>
