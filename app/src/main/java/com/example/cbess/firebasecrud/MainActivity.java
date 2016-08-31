@@ -81,6 +81,11 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.TaskA
 
     private void initDatabase() {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+        // synced data and writes will be persisted to disk across app 
+        // restarts and our app should work seamlessly in offline situations
+        database.setPersistenceEnabled(true);
+
         // create a leaf on root
         tasksRef = database.getReference("tasks");
     }
